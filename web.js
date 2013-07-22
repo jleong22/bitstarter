@@ -3,8 +3,8 @@ var express = require('express');
 var app = express();
 
 app.use(express.logger());
-var file = fs.readFileSync('text.html', 'utf8');
-var filetext = file.toString();
+var file = fs.readFileSync('index.html', 'utf8');
+var filetext = buf.toString(file);
 
 app.get('/', function(request, response) {
     response.send(filetext);
